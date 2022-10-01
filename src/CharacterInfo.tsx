@@ -16,7 +16,15 @@ function CharacterInfo() {
 		);
 	}, []);
 
-	return <div className="App">{character.name}</div>;
+	return (
+		<div className="App">
+			<div>Character Name: {character.name}</div>
+			<div>Actor Name: {character.actor}</div>
+			<div>Character House: {character.house}</div>
+			<div>Character Ancestry: {character.ancestry}</div>
+			<img src={character.image} />
+		</div>
+	);
 }
 
 export default CharacterInfo;
